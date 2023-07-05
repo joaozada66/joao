@@ -9,6 +9,10 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
       <link rell="stylesheet" href="reset.css">
+      <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
       
   </head>
    <body>
@@ -52,25 +56,22 @@
         <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
   </section>
 
-   </body>
 
-</html>
-
+  <div class="swiper-pagination"></div>
 <section class="carrossel">
    <h2 class="carrossel_titulo">Novos lançamentos</h2>
-</section>
+
 <div class="swiper">
    <!-- Additional required wrapper -->
    <div class="swiper-wrapper">
      <!-- Slides -->
      <div class="swiper-slide"><img src="img/ApacheKafka.png"
       alt="livro sobre apache kafka e spring boot da Alurabooks"></div>
-     <div class="swiper-slide">Slide 2</div>
-     <div class="swiper-slide">Slide 3</div>
-     ...
+     <div class="swiper-slide"><img src="img/Javascript.png" 
+      alt="livro sobre Javascript da Alurabooks"></div>
+     <div class="swiper-slide"><img src="img/Portugol.png"
+      alt="livro sobre Portugol da AluraBooks"></div>
    </div>
-   <!-- If we need pagination -->
-   <div class="swiper-pagination"></div>
  
    <!-- If we need navigation buttons -->
    <div class="swiper-button-prev"></div>
@@ -79,3 +80,19 @@
    <!-- If we need scrollbar -->
    <div class="swiper-scrollbar"></div>
  </div>
+</section>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+ const swiper = new Swiper('.swiper', {
+   spaceBetween: 10, 
+   slidesperview: 3,
+   pagination: {
+      el:'.swipe-pagination',
+      type:'bullets',
+   },
+ });
+</script>
+
+</body>
+
+</html>
